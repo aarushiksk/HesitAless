@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "132494138670",
+    "project_id": "hesit-aless",
+    "storage_bucket": "hesit-aless.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:132494138670:android:fc5564d66b0ccce3636ebf",
+        "android_client_info": {
+          "package_name": "com.example.hesitaless"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAvUi7k4BZAxiywe8GioxiXwDlB2boMaX8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

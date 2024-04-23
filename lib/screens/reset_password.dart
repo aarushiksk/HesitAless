@@ -5,14 +5,14 @@ import 'package:hesitaless/reuseable_widget/reuseable_widget.dart';
 import 'package:hesitaless/utils/colors_utils.dart';
 
 class ResetPassword extends StatefulWidget {
-  const ResetPassword({Key? key}) : super(key: key);
+  const ResetPassword({super.key});
 
   @override
   _ResetPasswordState createState() => _ResetPasswordState();
 }
 
 class _ResetPasswordState extends State<ResetPassword> {
-  TextEditingController _emailTextController = TextEditingController();
+  final TextEditingController _emailTextController = TextEditingController();
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -36,7 +36,7 @@ class _ResetPasswordState extends State<ResetPassword> {
           ], begin: Alignment.topCenter, end: Alignment.bottomCenter)),
           child: SingleChildScrollView(
               child: Padding(
-            padding: EdgeInsets.fromLTRB(20, 120, 20, 0),
+            padding: const EdgeInsets.fromLTRB(20, 120, 20, 0),
             child: Column(
               children: <Widget>[
                 const SizedBox(

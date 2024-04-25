@@ -3,6 +3,7 @@ import 'package:hesitaless/reuseable_widget/reuseable_widget.dart';
 import 'package:hesitaless/screens/home_screen.dart';
 import 'package:hesitaless/screens/reset_password.dart';
 import 'package:hesitaless/screens/signup_screen.dart';
+import 'package:hesitaless/screens/speak.dart';
 import 'package:hesitaless/utils/colors_utils.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 
@@ -55,8 +56,10 @@ class _SignInScreenState extends State<SignInScreen> {
                           email: _emailTextController.text,
                           password: _passwordTextController.text)
                       .then((value) {
-                    Navigator.push(context,
-                        MaterialPageRoute(builder: (context) => const HomeScreen()));
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => SpeechScreen()));
                   }).onError((error, stackTrace) {
                     print("Error ${error.toString()}");
                   });
@@ -101,8 +104,8 @@ class _SignInScreenState extends State<SignInScreen> {
           style: TextStyle(color: Colors.white70),
           textAlign: TextAlign.right,
         ),
-        onPressed: () => Navigator.push(
-            context, MaterialPageRoute(builder: (context) => const ResetPassword())),
+        onPressed: () => Navigator.push(context,
+            MaterialPageRoute(builder: (context) => const ResetPassword())),
       ),
     );
   }

@@ -37,6 +37,9 @@ dependencies:
   firebase_core: ^2.30.0
   firebase_auth: ^4.19.2
   image_picker: ^1.1.0
+  speech_to_text: ^6.6.1
+  highlight_text: ^1.7.0
+  avatar_glow: ^3.0.1
 
 dev_dependencies:
   flutter_test:
